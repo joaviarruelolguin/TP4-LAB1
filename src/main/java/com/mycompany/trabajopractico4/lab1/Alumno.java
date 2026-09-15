@@ -1,9 +1,13 @@
 package com.mycompany.trabajopractico4.lab1;
 
+import java.util.HashSet;
+
 public class Alumno {
+
     protected int legajo;
     protected String apellido;
     protected String nombre;
+    protected HashSet<Materia> materias = new HashSet<>();
 
     public Alumno() {
     }
@@ -37,12 +41,20 @@ public class Alumno {
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
-    
-    public void agregarMateria (Materia m){
-        
+
+    public void agregarMateria(Materia m) {
+        if (materias.contains(m)) {
+            System.out.println("No puedes inscribir dos veces en la misma materia a un alumno");
+        } else {
+            materias.add(m);
+            System.out.println(nombre + " " + apellido + " Inscripto exitosamente en: " + m.nombre);
+        }
+
     }
-    
-    public int cantidadMaterias(){
-        return 0;
+
+    public int cantidadMaterias() {
+
+        int cantidad = materias.size();
+        return cantidad;
     }
 }
