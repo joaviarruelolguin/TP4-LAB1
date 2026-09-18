@@ -88,7 +88,7 @@
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="desktopPaneEscritorio" max="32767" attributes="0"/>
+                  <Component id="escritorio" max="32767" attributes="0"/>
                   <Group type="102" attributes="0">
                       <Component id="jInternalFrame1" max="32767" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
@@ -102,7 +102,7 @@
           <Group type="102" alignment="1" attributes="0">
               <Component id="jInternalFrame1" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="32767" attributes="0"/>
-              <Component id="desktopPaneEscritorio" min="-2" max="-2" attributes="0"/>
+              <Component id="escritorio" min="-2" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -142,14 +142,14 @@
               <Properties>
                 <Property name="text" type="java.lang.String" value="Alumno"/>
               </Properties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuAlumnoActionPerformed"/>
-              </Events>
               <SubComponents>
                 <MenuItem class="javax.swing.JMenuItem" name="jMenuItem1AgregarAlumno">
                   <Properties>
                     <Property name="text" type="java.lang.String" value="Agrega Alumno"/>
                   </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuItem1AgregarAlumnoActionPerformed"/>
+                  </Events>
                 </MenuItem>
               </SubComponents>
             </Menu>
@@ -157,11 +157,31 @@
               <Properties>
                 <Property name="text" type="java.lang.String" value="Materia"/>
               </Properties>
+              <SubComponents>
+                <MenuItem class="javax.swing.JMenuItem" name="jMenuItem1">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Agregar materia"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuItem1ActionPerformed"/>
+                  </Events>
+                </MenuItem>
+              </SubComponents>
             </Menu>
             <Menu class="javax.swing.JMenu" name="jMenuRegistro">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Registro"/>
               </Properties>
+              <SubComponents>
+                <MenuItem class="javax.swing.JMenuItem" name="jMenuInscribir">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Inscribir"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuInscribirActionPerformed"/>
+                  </Events>
+                </MenuItem>
+              </SubComponents>
             </Menu>
             <Menu class="javax.swing.JMenu" name="jMenuSalir">
               <Properties>
@@ -172,7 +192,7 @@
         </Menu>
       </SubComponents>
     </Container>
-    <Container class="javax.swing.JDesktopPane" name="desktopPaneEscritorio">
+    <Container class="javax.swing.JDesktopPane" name="escritorio">
 
       <Layout>
         <DimensionLayout dim="0">

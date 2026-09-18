@@ -1,5 +1,7 @@
-com\mycompany\tp4\registroAlumno.class
-com\mycompany\tp4\vista.class
+com\mycompany\tp4\AltaAlumno.class
+com\mycompany\tp4\RegistroMateria.class
+com\mycompany\tp4\FormularioInscripcion.class
 com\mycompany\tp4\main.class
 com\mycompany\tp4\Materia.class
+com\mycompany\tp4\Vista.class
 com\mycompany\tp4\Alumno.class

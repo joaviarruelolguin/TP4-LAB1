@@ -47,7 +47,7 @@ public class Alumno {
             System.out.println("No puedes inscribir dos veces en la misma materia a un alumno");
         } else {
             materias.add(m);
-            System.out.println(nombre + " " + apellido + " Inscripto exitosamente en: " + m.nombre);
+            System.out.println(nombre + " " + apellido + " Inscripto exitosamente en: " + m.getNombre());
         }
 
     }
